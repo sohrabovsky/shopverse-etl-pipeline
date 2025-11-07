@@ -1,3 +1,4 @@
+import pandas as pd
 from faker import Faker
 import random
 import csv
@@ -60,6 +61,6 @@ def generate_to_csv(filename="transactions.csv", batch_size=100_000):
     print(f"\n🎉 Done! File saved as {filename}")
 
 if __name__ == "__main__":
-    generate_to_csv("orders.csv")
+    generate_to_csv("./shopverse-etl-pipeline/data/orders.csv")
 
 
